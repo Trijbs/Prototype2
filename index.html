@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ruben's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio of Ruben, a web developer with innovative visual experiences and projects.">
+    <meta name="keywords" content="portfolio, web development, projects, innovative, Ruben, visual experiences">
+    <meta name="author" content="Ruben">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph & Twitter Cards -->
+    <meta property="og:title" content="Ruben's Portfolio">
+    <meta property="og:description" content="Portfolio of Ruben, a web developer with innovative visual experiences and projects.">
+    <meta property="og:image" content="https://placehold.co/600x600?text=Ruben">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://trijbs.eu">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ruben's Portfolio">
+    <meta name="twitter:description" content="Portfolio of Ruben, a web developer with innovative visual experiences and projects.">
+    <meta name="twitter:image" content="https://placehold.co/600x600?text=Ruben">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="custom-cursor" aria-hidden="true"></div>
+    <video autoplay muted loop id="background-video" aria-hidden="true">
+    <source src="https://via.placeholder.com/1920x1080.mp4?text=Dynamic+Background+Video" type="video/mp4">
+    </video>
+    <div class="overlay" aria-hidden="true"></div>
+
+    <div class="sidebar" role="navigation" aria-label="Main Navigation">
+    <div style="display:flex;align-items:center;justify-content:space-between;">
+    <div class="brand">Ruben's Portfolio</div>
+    <div class="hamburger" id="hamburger" aria-label="Open menu" tabindex="0"><i class="fas fa-bars"></i></div>
+    </div>
+    <nav>
+    <a href="#about" aria-label="About section">About</a>
+    <a href="#skills" aria-label="Skills section">Skills</a>
+    <a href="#projects" aria-label="Projects section">Projects</a>
+    <a href="#testimonials" aria-label="Testimonials section">Testimonials</a>
+    <a href="#contact" aria-label="Contact section">Contact</a>
+    </nav>
+    <div class="social-links">
+    <a href="trjbs@icloud.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/trijbs" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+    class="fab fa-github"></i></a>
+    <a href="https://instagram.com/trijbs.xyz" target="_blank" rel="noopener noreferrer"
+    aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="theme-toggle">
+    <button id="theme-toggle-btn" aria-label="Toggle light/dark mode"><i class="fas fa-moon"></i> <span
+    style="margin-left:6px;">Theme</span></button>
+    </div>
+    </div>
+
+    <div class="main-content">
+    <header class="hero">
+    <div class="hero-img">
+    <img src="/Users/trijbs/Trijbs Coding/prototype 2/public/ruben.jpg" alt="Ruben's profile picture" />
+    </div>
+    <div class="hero-content">
+    <h1>Welcome</h1>
+    <p>Discover my innovative journey as a web developer, crafting immersive visual experiences and
+    groundbreaking projects for all environments.</p>
+    <a href="#projects" class="viewprojects-btn">View Projects</a>
+    </div>
+    </header>
+
+    <section id="about">
+    <h2>About Me</h2>
+    <div class="about-card">
+    <p>Hi, I'm Ruben, a web developer passionate about creating adaptive and futuristic visual experiences.
+    I specialize in HTML, CSS, and JavaScript, pushing the boundaries of technology to deliver optimized
+    solutions for any space or scale.</p>
+    </div>
+    </section>
+
+    <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+    <div class="skill-item">
+    <span>HTML</span>
+    <div class="progress-bar">
+    <div class="progress-fill" data-progress="90"></div>
+    </div>
+    </div>
+    <div class="skill-item">
+    <span>CSS</span>
+    <div class="progress-bar">
+    <div class="progress-fill" data-progress="85"></div>
+    </div>
+    </div>
+    <div class="skill-item">
+    <span>JavaScript</span>
+    <div class="progress-bar">
+    <div class="progress-fill" data-progress="80"></div>
+    </div>
+    </div>
+    <div class="skill-item">
+    <span>React</span>
+    <div class="progress-bar">
+    <div class="progress-fill" data-progress="75"></div>
+    </div>
+    </div>
+    <div class="skill-item">
+    <span>Node.js</span>
+    <div class="progress-bar">
+    <div class="progress-fill" data-progress="70"></div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section id="github-contributions">
+    <h2>GitHub Contributions</h2>
+    <div class="about-card">
+    <div class="github-contributions">
+    <img src="https://github.com/Trijbs" alt="Ruben's GitHub Contributions Chart"
+    style="width: 100%; max-width: 800px; margin-top: 10px; border-radius: 10px; background: var(--glass-strong); padding: 15px;">
+    <p style="text-align: center; margin-top: 10px;">
+    Contributions in the last year: <span id="github-score">Loading...</span>
+    </p>
+    </div>
+    </div>
+    </section>
+    <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+    <div class="project-card">
+    <img src="https://api.microlink.io/?url=https://urban-unleashed.vercel.app/&screenshot=true&meta=false&embed=screenshot.url"
+    alt="Urban Unleashed Project">
+    <div class="project-tags">
+    <span class="project-tag">Next.js</span>
+    <span class="project-tag">Three.js</span>
+    <span class="project-tag">Web Design</span>
+    </div>
+    <h3>Urban Unleashed</h3>
+    <p>A 3D generative art exploration.</p>
+    <a href="https://urban-unleashed.vercel.app/" target="_blank" rel="noopener noreferrer">View
+    Project</a>
+    </div>
+    <div class="project-card">
+    <img src="https://api.microlink.io/?url=https://trijbs.eu/PopFusion2/&screenshot=true&meta=false&embed=screenshot.url"
+    alt="PopFusion2 Project">
+    <div class="project-tags">
+    <span class="project-tag">React</span>
+    <span class="project-tag">API</span>
+    <span class="project-tag">Music</span>
+    </div>
+    <h3>PopFusion</h3>
+    <p>A dynamic music visualizer.</p>
+    <a href="https://trijbs.eu/PopFusion2/" target="_blank" rel="noopener noreferrer">View Project</a>
+    </div>
+    <div class="project-card">
+    <img src="https://api.microlink.io/?url=https://trijbs.shop/&screenshot=true&meta=false&embed=screenshot.url"
+    alt="Shop Platform Project">
+    <div class="project-tags">
+    <span class="project-tag">React</span>
+    <span class="project-tag">Node.js</span>
+    <span class="project-tag">E-commerce</span>
+    </div>
+    <h3>Shop Platform</h3>
+    <p>An adaptive e-commerce site designed for any screen size.</p>
+    <a href="https://trijbs.shop" target="_blank" rel="noopener noreferrer">View Project</a>
+    </div>
+    </div>
+    </section>
+
+    <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonials-grid">
+    <div class="testimonial-card">
+    "Ruben's attention to detail and creative vision are unmatched. Our project exceeded expectations!"
+    <div class="author">– Alex J., Product Manager</div>
+    </div>
+    <div class="testimonial-card">
+    "A true professional who brings ideas to life with stunning visuals and seamless code."
+    <div class="author">– Jamie L., Designer</div>
+    </div>
+    </div>
+    </section>
+
+    <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-grid">
+    <div class="contact-card">
+    <i class="fas fa-envelope"></i>
+    <a href="trjbs@icloud.com" aria-label="Email"><span class="__cf_email__">trjbs@icloud.com</span></a>
+    </div>
+    <div class="contact-card">
+    <i class="fab fa-github"></i>
+    <a href="https://github.com/trijbs" target="_blank" rel="noopener noreferrer"
+    aria-label="GitHub">trijbs</a>
+    </div>
+    <div class="contact-card">
+    <i class="fab fa-instagram"></i>
+    <a href="https://instagram.com/trijbs.xyz" target="_blank" rel="noopener noreferrer"
+    aria-label="Instagram">trijbs</a>
+    </div>
+    </div>
+    </section>
+
+    <footer>
+    <p>© 2025 Ruben | All Rights Reserved</p>
+    </footer>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+</body>
+</html>
