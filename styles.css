@@ -524,6 +524,7 @@ section {
   background-color: var(--bg-tertiary);
   border-radius: var(--radius-full);
   font-weight: 500;
+  cursor: pointer;
   transition: all var(--transition-fast);
 }
 
@@ -639,6 +640,7 @@ blockquote {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   transition: background-color var(--transition-fast);
 }
 
