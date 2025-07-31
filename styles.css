@@ -19,6 +19,7 @@
   --accent-quinary: #4a8bed; /* Blue for photography projects */
   --shadow-color: rgba(0, 0, 0, 0.2);
   --overlay-color: rgba(0, 0, 0, 0.7);
+  --page-gradient: radial-gradient(circle at 20% 20%, rgba(177, 74, 237, 0.2), rgba(0, 200, 255, 0.1) 70%);
   
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -69,6 +70,7 @@
   --text-tertiary: #777777;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --overlay-color: rgba(255, 255, 255, 0.8);
+  --page-gradient: radial-gradient(circle at 20% 20%, rgba(177, 74, 237, 0.05), rgba(0, 200, 255, 0.05) 70%);
 }
 
 /* ===== Reset & Base Styles ===== */
@@ -85,6 +87,10 @@ html {
 
 body {
   font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  background-image: var(--page-gradient);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background: var(--bg-gradient);
   color: var(--text-primary);
   line-height: 1.6;
@@ -190,6 +196,7 @@ section {
   transition: all var(--transition-fast);
   text-transform: uppercase;
   letter-spacing: 1px;
+  cursor: pointer;
   font-size: 0.9rem;
 }
 
@@ -335,7 +342,7 @@ section {
   right: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at top right, rgba(177, 74, 237, 0.1), transparent 70%);
+  background: var(--page-gradient);
   z-index: var(--z-back);
 }
 
@@ -826,6 +833,7 @@ textarea:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   z-index: 1;
   transition: background-color var(--transition-fast);
 }
