@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/logo-footer.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="logo-footer.css">
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body class="dark-theme">
@@ -45,10 +45,10 @@
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-image">
-                        <div class="profile-image" style="background-image: url('img/profile.jpeg')"></div>
+                        <div class="profile-image" style="background-image: url('profile.jpeg')"></div>
                     </div>
                     <div class="hero-text">
-                        <h1>Welcome</h1>
+                        <h1 class="hero-title">Welcome to My Core</h1>
                         <p class="hero-subtitle">Hi, I'm <span class="highlight">Ruben</span>, a web developer and designer crafting immersive visual experiences and creative projects.</p>
                         <p>Discover my innovative journey as I push the boundaries of technology to deliver optimized solutions for any space or scale.</p>
                         <a href="#projects" class="btn btn-primary">Explore My Work</a>
@@ -185,7 +185,7 @@
                             <p>Contributions in the last year: <span class="highlight">8</span></p>
                         </div>
                         <div class="contribution-calendar">
-                            <img src="img/github_contributions.svg+xml" alt="GitHub contributions graph" class="github-graph">
+                            <img src="github_contributions.svg+xml" alt="GitHub contributions graph" class="github-graph">
                         </div>
                     </div>
                 </div>
@@ -209,7 +209,7 @@
                 <div class="projects-grid">
                     <!-- Web Projects -->
                     <div class="project-card" data-category="web">
-                        <div class="project-image" style="background-image: url('img/urban_unleashed.png')"></div>
+                        <div class="project-image" style="background-image: url('urban_unleashed.png')"></div>
                         <div class="project-content">
                             <h3>Urban Unleashed</h3>
                             <p>A 3D generative art exploration.</p>
@@ -223,7 +223,7 @@
                     </div>
                     
                     <div class="project-card" data-category="web apps">
-                        <div class="project-image" style="background-image: url('img/popfusion.png')"></div>
+                        <div class="project-image" style="background-image: url('popfusion.png')"></div>
                         <div class="project-content">
                             <h3>PopFusion</h3>
                             <p>A dynamic music visualizer.</p>
@@ -237,7 +237,7 @@
                     </div>
                     
                     <div class="project-card" data-category="web">
-                        <div class="project-image" style="background-image: url('img/shop_platform.png')"></div>
+                        <div class="project-image" style="background-image: url('shop_platform.png')"></div>
                         <div class="project-content">
                             <h3>Shop Platform</h3>
                             <p>An adaptive e-commerce site designed for any screen size.</p>
@@ -251,7 +251,7 @@
                     </div>
                     
                     <div class="project-card" data-category="web">
-                        <div class="project-image" style="background-image: url('img/webshop.png')"></div>
+                        <div class="project-image" style="background-image: url('webshop.png')"></div>
                         <div class="project-content">
                             <h3>Webshop</h3>
                             <p>A simple webshop with a shopping cart.</p>
@@ -266,7 +266,7 @@
                     
                     <!-- Clothing Projects -->
                     <div class="project-card" data-category="clothing">
-                        <div class="project-image" style="background-image: url('img/free_the_spirit.jpeg')"></div>
+                        <div class="project-image" style="background-image: url('free_the_spirit.jpeg')"></div>
                         <div class="project-content">
                             <h3>Free The Spirit</h3>
                             <p>T-shirt design with snake motif.</p>
@@ -279,7 +279,7 @@
                     </div>
                     
                     <div class="project-card" data-category="clothing">
-                        <div class="project-image" style="background-image: url('img/trib_design.jpeg')"></div>
+                        <div class="project-image" style="background-image: url('trib_design.jpeg')"></div>
                         <div class="project-content">
                             <h3>TRIB</h3>
                             <p>Water effect typography for apparel.</p>
@@ -293,7 +293,7 @@
                     
                     <!-- Spreads Projects -->
                     <div class="project-card" data-category="spreads">
-                        <div class="project-image" style="background-image: url('img/design_trends.jpeg')"></div>
+                        <div class="project-image" style="background-image: url('design_trends.jpeg')"></div>
                         <div class="project-content">
                             <h3>Design Trends 2024</h3>
                             <p>Editorial spread on graphic design trends.</p>
@@ -307,7 +307,7 @@
                     
                     <!-- Photography Projects -->
                     <div class="project-card" data-category="photography">
-                        <div class="project-image" style="background-image: url('img/blue_sculptures.jpeg')"></div>
+                        <div class="project-image" style="background-image: url('blue_sculptures.jpeg')"></div>
                         <div class="project-content">
                             <h3>Blue Sculptures</h3>
                             <p>Artistic photography series with blue sculptural objects.</p>
@@ -320,7 +320,7 @@
                     </div>
                     
                     <div class="project-card" data-category="photography">
-                        <div class="project-image" style="background-image: url('img/motivational.jpeg')"></div>
+                        <div class="project-image" style="background-image: url('motivational.jpeg')"></div>
                         <div class="project-content">
                             <h3>Motivational Series</h3>
                             <p>Typography and photography combined for inspirational messages.</p>
@@ -507,7 +507,7 @@
         </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
     <script>
         // Initialize Feather icons
         document.addEventListener('DOMContentLoaded', () => {
