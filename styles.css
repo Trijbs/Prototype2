@@ -54,6 +54,10 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+
+  /* Personal theme */
+  --bg-gradient: linear-gradient(135deg, var(--bg-primary), var(--bg-tertiary));
+  --text-glow: rgba(0, 200, 255, 0.4);
 }
 
 /* Light Theme Variables */
@@ -87,10 +91,12 @@ body {
   background-image: var(--page-gradient);
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background: var(--bg-gradient);
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
-  transition: background-color var(--transition-normal), color var(--transition-normal);
+  background-attachment: fixed;
+  transition: background-color var(--transition-normal), color var(--transition-normal), background var(--transition-normal);
 }
 
 img {
@@ -173,7 +179,11 @@ section {
 }
 
 .highlight {
-  color: var(--accent-primary);
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 /* ===== Buttons ===== */
@@ -357,7 +367,7 @@ section {
   background-size: cover;
   background-position: center;
   border: 4px solid var(--accent-primary);
-  box-shadow: 0 10px 30px rgba(0, 200, 255, 0.3);
+  box-shadow: 0 0 20px var(--accent-primary);
   position: relative;
   overflow: hidden;
 }
@@ -390,6 +400,21 @@ section {
 
 .hero-text {
   flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 0 0 20px var(--text-glow);
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .hero-subtitle {
