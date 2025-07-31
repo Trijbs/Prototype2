@@ -19,7 +19,9 @@
   --accent-quinary: #4a8bed; /* Blue for photography projects */
   --shadow-color: rgba(0, 0, 0, 0.2);
   --overlay-color: rgba(0, 0, 0, 0.7);
+  --bg-gradient: linear-gradient(160deg, #1a1a1a 0%, #252525 100%);
   --page-gradient: radial-gradient(circle at 20% 20%, rgba(177, 74, 237, 0.2), rgba(0, 200, 255, 0.1) 70%);
+
   
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -209,6 +211,7 @@ section {
 .btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(0, 200, 255, 0.4);
+  filter: brightness(1.1);
   color: white;
 }
 
@@ -342,6 +345,8 @@ section {
   right: 0;
   width: 100%;
   height: 100%;
+  background: radial-gradient(circle at top right, rgba(177, 74, 237, 0.25), transparent 70%),
+    radial-gradient(circle at bottom left, rgba(0, 200, 255, 0.15), transparent 70%);
   background: var(--page-gradient);
   z-index: var(--z-back);
 }
@@ -561,7 +566,7 @@ section {
 
 .filter-btn:hover,
 .filter-btn.active {
-  background-color: var(--accent-primary);
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
   color: white;
 }
 
@@ -677,7 +682,7 @@ blockquote {
 
 .prev-btn:hover,
 .next-btn:hover {
-  background-color: var(--accent-primary);
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
   color: white;
 }
 
@@ -697,7 +702,7 @@ blockquote {
 
 .dot.active,
 .dot:hover {
-  background-color: var(--accent-primary);
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
 }
 
 /* ===== Contact Section ===== */
