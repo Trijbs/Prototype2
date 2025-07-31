@@ -5,7 +5,7 @@ from datetime import datetime
 from flask import Flask, request, jsonify, render_template, send_from_directory
 
 # Initialize Flask app
-app = Flask(__name__, static_folder='../static', template_folder='../templates')
+app = Flask(__name__, static_folder='.', template_folder='.')
 
 # Database setup
 DB_PATH = os.path.join(os.path.dirname(__file__), 'portfolio.db')
